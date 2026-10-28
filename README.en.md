@@ -85,6 +85,16 @@ Then add one dependency and one bundle entry to the profile's `package.json` (`%
 
 Let Harness install the dependency (it does so on the next start, or run `pnpm install` in that directory) and refresh the page.
 
+**Option C: prebuilt release tarball (what the plugin market installs)**
+
+```
+https://github.com/1834395550/dsh-chat-search/releases/download/v1.0.1/dsh-chat-search-1.0.1.tgz
+```
+
+Hand it to the plugin installer: no source build, no `allowBuilds` approval.
+
+> The plugin market (`dshmarket`) only lists entries from the curated `awesome-dsh-plugin` registry, so a package in your own repository cannot be searched there. This repo is already arranged to meet that registry's requirements (`dsh.bundle` in `package.json`, `screenshots.json` at the root, raster icons under `assets/`, a prebuilt tarball on the release) — once it is listed, **Plugins → Market** finds it with a `search` query and installs it in one click.
+
 > ⚠️ **Name clash**: the community plugin `helo060228/dsh-chat-search` uses the same package name. Remove that dependency and bundle entry first — npm would otherwise overwrite one with the other, and both bundles would fight over `Ctrl+F` in the same overlay slot.
 
 ## How it works

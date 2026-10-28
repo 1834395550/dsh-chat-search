@@ -1,6 +1,7 @@
 {
   "name": "dsh-chat-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "icon": "./assets/icon-180.png",
   "type": "module",
   "description": "Ctrl+F search inside the open conversation: in-text highlights, previous/next, a match list and a count that climbs as the scan goes. Nothing is expanded and the reading position stays put.",
   "keywords": [
@@ -34,7 +35,9 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
+    "assets/*.png",
     "screenshots/*.png",
+    "screenshots.json",
     "README.md",
     "README.en.md",
     "LICENSE"
