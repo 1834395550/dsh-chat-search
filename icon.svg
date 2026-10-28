@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Conversation find">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#1f6feb"/>
+  <path d="M14 22a8 8 0 0 1 8-8h20a8 8 0 0 1 8 8v14a8 8 0 0 1-8 8H27l-9 8v-8h-0.5A4.5 4.5 0 0 1 14 39.5z"
+        fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linejoin="round"/>
+  <circle cx="27" cy="27" r="6.6" fill="none" stroke="#ffffff" stroke-width="3.2"/>
+  <path d="M31.8 31.8 37 37" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

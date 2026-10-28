@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation Find",
+    "description": "Ctrl+F inside the open conversation: in-text highlights, previous/next, a match list, and a count that climbs as the scan goes. No collapsed block is opened and the reading position stays put; Esc closes."
+  }
+}
