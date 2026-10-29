@@ -56,11 +56,22 @@ This plugin is written against the current DOM contract, and drops the interrupt
 
 **A. Through the plugin installer**
 
-Point it at the repository:
+Paste one of these into **Plugins → Add plugin**. Behind the Great Firewall use the first one — it is served by jsDelivr and needs no proxy (installed in ~2s in testing):
+
+```
+https://cdn.jsdelivr.net/gh/1834395550/dsh-chat-search@main/dist/dsh-chat-search-1.0.1.tgz
+```
+
+With unobstructed access to GitHub, the repository or the release asset works too:
 
 ```
 git+https://github.com/1834395550/dsh-chat-search.git
+https://github.com/1834395550/dsh-chat-search/releases/download/v1.0.1/dsh-chat-search-1.0.1.tgz
 ```
+
+> ⚠️ **A GitHub address fails on networks that cannot reach GitHub**: release downloads redirect to `objects.githubusercontent.com`, which is reset in mainland China, and the installer fetches GitHub addresses and `.tgz` links **directly, not through a registry mirror**, so it reports "could not connect to github.com". That is the network, not the package — use a proxy, or the jsDelivr link above.
+
+> The bare package name `dsh-chat-search` does not work yet: the package is not on npm. Once it is, that becomes the shortest path.
 
 **B. Straight into a profile**
 
